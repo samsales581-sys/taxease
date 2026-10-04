@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="TaxEase — A Tax that EASE. TAXEASE.">
+  <meta name="theme-color" content="#f4c84a">
+  <title>TaxEase | A Tax that EASE. TAXEASE.</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="#home" aria-label="TaxEase home">
+        <span class="brand-mark">₱</span>
+        <span>TaxEase</span>
+      </a>
+
+      <button class="menu-btn" id="menuBtn" type="button" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="main-nav" id="mainNav">
+        <a href="#overview">Overview</a>
+        <a href="#features">Features</a>
+        <a href="#calculator">Calculator</a>
+        <a href="#market">Target Market</a>
+        <a href="#pricing">Pricing</a>
+        <a class="nav-cta" href="#calculator">Try Calculator</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero section" id="home">
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <span class="eyebrow">Product Pitch • TaxEase</span>
+          <h1>A Tax that EASE.<br><em>TAXEASE.</em></h1>
+          <p class="hero-text">
+            TaxEase is a user-friendly application designed to help people understand and calculate their taxes.
+            It provides simple explanations of different tax concepts while allowing users to enter their
+            information and get an estimated tax amount.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#calculator">Calculate an Estimate</a>
+            <a class="btn btn-light" href="#features">Explore Features</a>
+          </div>
+          <div class="mini-points">
+            <span>✓ Easy to understand</span>
+            <span>✓ Responsive design</span>
+            <span>✓ Free basic calculator</span>
+          </div>
+        </div>
+
+        <div class="hero-art reveal">
+          <div class="hero-orbit orbit-a"></div>
+          <div class="hero-orbit orbit-b"></div>
+          <div class="preview-card">
+            <div class="preview-head">
+              <div class="preview-brand"><span>₱</span><strong>TaxEase</strong></div>
+              <span class="pill">Estimate</span>
+            </div>
+            <p class="preview-label">Selected tax type</p>
+            <h3>Individual Income Tax</h3>
+            <div class="preview-row"><span>Annual income</span><strong>₱500,000</strong></div>
+            <div class="preview-row"><span>Deductions</span><strong>₱50,000</strong></div>
+            <div class="preview-total"><span>Estimated taxable income</span><strong>₱450,000</strong></div>
+            <div class="preview-line"><i></i></div>
+            <small>Learn • Calculate • Understand</small>
+          </div>
+          <span class="floating-note note-a">📚 Tax guides</span>
+          <span class="floating-note note-b">🧮 Multiple tax types</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section soft-section" id="overview">
+      <div class="container">
+        <div class="section-heading centered reveal">
+          <span class="section-kicker">Product Overview</span>
+          <h2>Understand taxes and calculate estimates in one application.</h2>
+          <p>
+            Instead of searching different websites to understand taxes and then using a separate calculator,
+            TaxEase puts both learning and calculation in one application. Users can learn about taxes,
+            understand which tax may apply to them, and calculate an estimated amount in one place.
+          </p>
+        </div>
+
+        <div class="overview-grid">
+          <article class="overview-card reveal">
+            <span>01</span>
+            <h3>Learn</h3>
+            <p>Read simple definitions and explanations of common tax concepts.</p>
+          </article>
+          <article class="overview-card reveal">
+            <span>02</span>
+            <h3>Identify</h3>
+            <p>Choose a taxpayer category and see which information may be relevant.</p>
+          </article>
+          <article class="overview-card reveal">
+            <span>03</span>
+            <h3>Calculate</h3>
+            <p>Select a tax type and follow a step-by-step estimate.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="features">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="section-kicker">Features</span>
+          <h2>The following are features of this website.</h2>
+          <p>Click any feature below to open its information and interactive guide.</p>
+        </div>
+
+        <div class="feature-grid" id="featureGrid">
+          <button class="feature-card active reveal" type="button" data-feature="tax101">
+            <span class="feature-icon">📚</span>
+            <span class="feature-copy">
+              <strong>Tax 101</strong>
+              <small>Simple explanations of basic tax concepts and terms</small>
+            </span>
+            <span class="feature-arrow">→</span>
+          </button>
+
+          <button class="feature-card reveal" type="button" data-feature="types">
+            <span class="feature-icon">🧾</span>
+            <span class="feature-copy">
+              <strong>Tax Types Guide</strong>
+              <small>Different types of taxes and who they apply to</small>
+            </span>
+            <span class="feature-arrow">→</span>
+          </button>
+
+          <button class="feature-card reveal" type="button" data-feature="calculator">
+            <span class="feature-icon">🧮</span>
+            <span class="feature-copy">
+              <strong>Tax Calculator</strong>
+              <small>Estimated tax amounts based on user information</small>
+            </span>
+            <span class="feature-arrow">→</span>
+          </button>
+
+          <button class="feature-card reveal" type="button" data-feature="category">
+            <span class="feature-icon">👤</span>
+            <span class="feature-copy">
+              <strong>Taxpayer Category</strong>
+              <small>Identify which taxpayer classification may apply</small>
+            </span>
+            <span class="feature-arrow">→</span>
+          </button>
+
+          <button class="feature-card reveal" type="button" data-feature="income">
+            <span class="feature-icon">💰</span>
+            <span class="feature-copy">
+              <strong>Income & Deduction Input</strong>
+              <small>Enter income and applicable deductions</small>
+            </span>
+            <span class="feature-arrow">→</span>
+          </button>
+
+          <button class="feature-card reveal" type="button" data-feature="deadline">
+            <span class="feature-icon">📅</span>
+            <span class="feature-copy">
+              <strong>Tax Deadline Reminders</strong>
+              <small>Reminders for important tax deadlines</small>
+            </span>
+            <span class="feature-arrow">→</span>
+          </button>
+
+          <button class="feature-card reveal" type="button" data-feature="steps">
+            <span class="feature-icon">🔎</span>
+            <span class="feature-copy">
+              <strong>Step-by-Step Guide</strong>
+              <small>Explains how the tax calculation was arrived at</small>
+            </span>
+            <span class="feature-arrow">→</span>
+          </button>
+
+          <button class="feature-card reveal" type="button" data-feature="updates">
+            <span class="feature-icon">🔄</span>
+            <span class="feature-copy">
+              <strong>Tax Updates</strong>
+              <small>Information about changes in tax rules</small>
+            </span>
+            <span class="feature-arrow">→</span>
+          </button>
+        </div>
+
+        <section class="feature-detail reveal" id="featureDetail" aria-live="polite">
+          <div class="feature-detail-head">
+            <div class="feature-detail-title">
+              <span class="detail-icon" id="detailIcon">📚</span>
+              <div>
+                <span class="detail-kicker">Selected feature</span>
+                <h3 id="detailTitle">Tax 101</h3>
+                <p id="detailIntro">Understand basic tax concepts using simple explanations.</p>
+              </div>
+            </div>
+            <button class="detail-jump" id="detailAction" type="button">Open related section</button>
+          </div>
+          <div class="detail-content-grid" id="detailContent"></div>
+        </section>
+      </div>
+    </section>
+
+    <section class="section soft-section" id="category">
+      <div class="container category-layout">
+        <div class="section-heading reveal">
+          <span class="section-kicker">Taxpayer Category</span>
+          <h2>Find the taxpayer classification that may apply to you.</h2>
+          <p>
+            This is a simple product guide only. Your official tax classification depends on your actual circumstances
+            and applicable BIR rules.
+          </p>
+        </div>
+
+        <div class="category-panel reveal">
+          <div class="category-panel-top">
+            <span class="category-visual" id="categoryVisual">👤</span>
+            <div>
+              <span class="small-label">Current selection</span>
+              <h3 id="categoryPanelTitle">No category selected</h3>
+            </div>
+          </div>
+
+          <label class="pretty-select-label" for="categorySelectMain">Taxpayer category</label>
+          <div class="pretty-select">
+            <span class="select-leading" id="categoryLeading">👤</span>
+            <select id="categorySelectMain">
+              <option value="">Select your category</option>
+              <option value="Student">Student</option>
+              <option value="Employee">Employee</option>
+              <option value="Freelancer">Freelancer</option>
+              <option value="Professional">Professional</option>
+              <option value="Self-employed individual">Self-employed individual</option>
+              <option value="Online seller">Online seller</option>
+              <option value="Small business owner">Small business owner</option>
+            </select>
+            <span class="select-chevron">⌄</span>
+          </div>
+
+          <div class="category-message" id="categoryMessage">
+            Select a category to see a short guide.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section calculator-section" id="calculator">
+      <div class="container">
+        <div class="section-heading centered reveal">
+          <span class="section-kicker">Easy Multi-Tax Calculator</span>
+          <h2>Choose a tax, answer simple questions, and let TaxEase do the math.</h2>
+          <p>
+            You do not need to memorize tax percentages. For each supported case, TaxEase automatically
+            applies the applicable rate or tax table and explains the computation step by step.
+          </p>
+        </div>
+
+        <div class="tax-type-strip reveal" id="taxTypeStrip">
+          <button type="button" class="tax-chip active" data-tax="individual">👤 Individual Income</button>
+          <button type="button" class="tax-chip" data-tax="corporate">🏢 Corporate Income</button>
+          <button type="button" class="tax-chip" data-tax="vat">🧾 VAT</button>
+          <button type="button" class="tax-chip" data-tax="percentage">%</button>
+          <button type="button" class="tax-chip" data-tax="capitalReal">🏠 Capital Gains</button>
+          <button type="button" class="tax-chip" data-tax="capitalShares">📈 Shares</button>
+          <button type="button" class="tax-chip" data-tax="estate">📜 Estate</button>
+          <button type="button" class="tax-chip" data-tax="donor">🎁 Donor's</button>
+          <button type="button" class="tax-chip" data-tax="dst">📄 DST</button>
+          <button type="button" class="tax-chip" data-tax="withholding">✂️ Withholding</button>
+          <button type="button" class="tax-chip" data-tax="excise">🏷️ Excise</button>
+        </div>
+
+        <div class="calculator-shell reveal">
+          <form class="calculator-card" id="taxForm" novalidate>
+            <div class="calc-top">
+              <div>
+                <span class="small-label">Simple guided calculator</span>
+                <h3>Tell us what you want to calculate</h3>
+              </div>
+              <span class="country-badge">PH</span>
+            </div>
+
+            <label class="pretty-select-label" for="taxTypeSelect">Tax type</label>
+            <div class="pretty-select tax-select">
+              <span class="select-leading" id="taxTypeIcon">👤</span>
+              <select id="taxTypeSelect">
+                <option value="individual">Individual Income Tax</option>
+                <option value="corporate">Corporate Income Tax</option>
+                <option value="vat">Value-Added Tax (VAT)</option>
+                <option value="percentage">Section 116 Percentage Tax</option>
+                <option value="capitalReal">Capital Gains Tax — Real Property</option>
+                <option value="capitalShares">Capital Gains Tax — Unlisted Shares</option>
+                <option value="estate">Estate Tax</option>
+                <option value="donor">Donor's Tax</option>
+                <option value="dst">Documentary Stamp Tax — Real Property</option>
+                <option value="withholding">Common Expanded Withholding Tax</option>
+                <option value="excise">Sweetened Beverage Excise Tax</option>
+              </select>
+              <span class="select-chevron">⌄</span>
+            </div>
+
+            <label class="pretty-select-label" for="calculatorCategory">Taxpayer category</label>
+            <div class="pretty-select">
+              <span class="select-leading" id="calculatorCategoryIcon">👤</span>
+              <select id="calculatorCategory">
+                <option value="">Select your category</option>
+                <option value="Student">Student</option>
+                <option value="Employee">Employee</option>
+                <option value="Freelancer">Freelancer</option>
+                <option value="Professional">Professional</option>
+                <option value="Self-employed individual">Self-employed individual</option>
+                <option value="Online seller">Online seller</option>
+                <option value="Small business owner">Small business owner</option>
+              </select>
+              <span class="select-chevron">⌄</span>
+            </div>
+
+            <div class="easy-helper">
+              <span>✨</span>
+              <div>
+                <strong>No percentage knowledge needed.</strong>
+                <p>TaxEase chooses the supported rate or tax table automatically from your answers.</p>
+              </div>
+            </div>
+            <div id="dynamicFields" class="dynamic-fields"></div>
+
+            <p class="form-message" id="formMessage" role="alert"></p>
+
+            <button class="btn btn-primary full-btn" type="submit">Calculate Estimate</button>
+            <button class="btn btn-reset full-btn" id="resetCalc" type="button">Reset Calculator</button>
+          </form>
+
+          <section class="result-card" id="resultCard" aria-live="polite">
+            <div class="result-head">
+              <div>
+                <span class="small-label">Estimated result</span>
+                <h3 id="resultTitle">Individual Income Tax</h3>
+              </div>
+              <span class="result-icon" id="resultIcon">👤</span>
+            </div>
+
+            <div class="result-total">
+              <span id="resultTotalLabel">Estimated tax</span>
+              <strong id="resultAmount">₱0.00</strong>
+              <small id="resultSubtext">Enter information and calculate to see a result.</small>
+            </div>
+
+            <div class="result-metrics" id="resultMetrics">
+              <div><span>Tax base</span><strong>₱0.00</strong></div>
+              <div><span>Effective rate</span><strong>0.00%</strong></div>
+            </div>
+
+            <div class="step-guide">
+              <div class="step-guide-title"><span>🔎</span><h4>How TaxEase calculated it</h4></div>
+              <ol id="calculationSteps">
+                <li>Select a tax type.</li>
+                <li>Enter the requested values.</li>
+                <li>Click <strong>Calculate Estimate</strong>.</li>
+              </ol>
+            </div>
+
+            <div class="result-note" id="resultNote">
+              <strong>Important</strong>
+              <p>
+                TaxEase provides simplified estimates only. Actual tax depends on the transaction, taxpayer status,
+                exemptions, deductions, credits, and current BIR rules.
+              </p>
+            </div>
+          </section>
+        </div>
+
+        <div class="tax-scope-note reveal">
+          <strong>Made easier for beginners:</strong>
+          <p>
+            TaxEase never asks you to guess a tax percentage. It only calculates the supported Philippine tax
+            situations shown in the form. If the selected case needs a different rule, TaxEase stops and explains
+            the limitation instead of giving a misleading result.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section soft-section" id="reminders">
+      <div class="container reminders-layout">
+        <div>
+          <div class="section-heading reveal">
+            <span class="section-kicker">Tax Deadline Reminders</span>
+            <h2>Save your own important date.</h2>
+            <p>Reminders are stored only in this browser through local storage.</p>
+          </div>
+
+          <form class="reminder-form reveal" id="reminderForm">
+            <label>
+              <span>Reminder title</span>
+              <input type="text" id="reminderName" maxlength="60" placeholder="e.g. File quarterly return" required>
+            </label>
+            <label>
+              <span>Date</span>
+              <input type="date" id="reminderDate" required>
+            </label>
+            <button class="btn btn-primary" type="submit">Add Reminder</button>
+          </form>
+        </div>
+
+        <div class="reminder-list-card reveal">
+          <div class="reminder-card-head">
+            <div>
+              <span class="small-label">Saved on this browser</span>
+              <h3>Your reminders</h3>
+            </div>
+            <span>📅</span>
+          </div>
+          <div id="reminderList"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="market">
+      <div class="container">
+        <div class="section-heading centered reveal">
+          <span class="section-kicker">Target Market</span>
+          <h2>TaxEase is designed for everyone, especially:</h2>
+        </div>
+        <div class="market-grid">
+          <div class="market-card reveal"><span>🎓</span><strong>Students</strong></div>
+          <div class="market-card reveal"><span>💼</span><strong>Employees</strong></div>
+          <div class="market-card reveal"><span>💻</span><strong>Freelancers</strong></div>
+          <div class="market-card reveal"><span>🧑‍💼</span><strong>Professionals</strong></div>
+          <div class="market-card reveal"><span>🛠️</span><strong>Self-employed individuals</strong></div>
+          <div class="market-card reveal"><span>🛍️</span><strong>Online sellers</strong></div>
+          <div class="market-card reveal"><span>🏪</span><strong>Small business owners</strong></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section usefulness-section" id="useful">
+      <div class="container useful-grid">
+        <div class="useful-card reveal">
+          <span class="section-kicker">What Makes TaxEase Useful?</span>
+          <h2>Learn and calculate in one place.</h2>
+          <p>
+            Instead of searching different websites to understand taxes and then using a separate calculator,
+            TaxEase puts both learning and calculation in one application. Users can learn about taxes,
+            understand which tax may apply to them, and calculate an estimated amount in one place.
+          </p>
+          <div class="useful-points">
+            <span>📚 Simple tax learning</span>
+            <span>🧮 Multiple estimate calculators</span>
+            <span>🔎 Step-by-step results</span>
+            <span>📅 Personal reminders</span>
+          </div>
+        </div>
+
+        <aside class="important-card reveal">
+          <span class="important-icon">!</span>
+          <div>
+            <span class="small-label">Important Note</span>
+            <h3>Estimates, not official assessments.</h3>
+            <p>
+              For an actual application, the calculator would need to be based on the applicable and current
+              Philippine tax rules. Results are estimates and are not a substitute for an official BIR assessment
+              or professional tax advice.
+            </p>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section" id="pricing">
+      <div class="container">
+        <div class="section-heading centered reveal">
+          <span class="section-kicker">Pricing</span>
+          <h2>Simple options for different users.</h2>
+        </div>
+
+        <div class="pricing-grid">
+          <article class="price-card reveal">
+            <span class="plan-label">Basic Version</span>
+            <div class="price">FREE</div>
+            <p>Tax explanations and a basic tax calculator.</p>
+            <ul>
+              <li>✓ Tax explanations</li>
+              <li>✓ Basic tax calculator</li>
+            </ul>
+            <a class="btn btn-light full-btn" href="#calculator">Try Basic</a>
+          </article>
+
+          <article class="price-card premium reveal">
+            <span class="premium-badge">Premium</span>
+            <span class="plan-label">Premium Version</span>
+            <div class="price">₱49<small>/month</small></div>
+            <p>Advanced calculations, personalized tax guides, tax deadline reminders, and tax updates.</p>
+            <ul>
+              <li>✓ Advanced calculations</li>
+              <li>✓ Personalized guides</li>
+              <li>✓ Tax reminders</li>
+              <li>✓ Tax updates</li>
+            </ul>
+            <button class="btn btn-primary full-btn" id="premiumButton" type="button">View Premium Message</button>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section final-section">
+      <div class="container final-card reveal">
+        <div>
+          <span class="section-kicker">TaxEase</span>
+          <h2>A Tax that EASE. TAXEASE.</h2>
+          <p>Tax information and useful estimates in one clean, beginner-friendly website.</p>
+        </div>
+        <a class="btn btn-dark" href="#calculator">Use Calculator</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-grid">
+      <div>
+        <a class="brand" href="#home"><span class="brand-mark">₱</span><span>TaxEase</span></a>
+        <p>“A Tax that EASE. TAXEASE.”</p>
+      </div>
+      <div>
+        <strong>Important notice</strong>
+        <p>
+          This website is a product-pitch prototype. Calculator results are estimates and are not a substitute
+          for official BIR assessment or professional tax advice.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite">
+    <span id="toastIcon">✓</span>
+    <p id="toastText">Saved.</p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
